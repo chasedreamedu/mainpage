@@ -1,0 +1,17 @@
+{
+  "name": "chasedreamedu",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "'Yan <'yanche.belongs@gmail.com'>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/chasedreamedu/mainpage",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
