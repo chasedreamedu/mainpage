@@ -3,5 +3,5 @@ bower_components
 *.js
 *.html
 typings
-!./Gruntfile.js
+!Gruntfile.js
 static
