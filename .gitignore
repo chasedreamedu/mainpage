@@ -4,4 +4,3 @@ bower_components
 *.html
 typings
 !Gruntfile.js
-static
