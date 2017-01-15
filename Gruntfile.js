@@ -12,16 +12,31 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: 'bower_components/font-awesome',
                     src: ['css/*', 'fonts/*'],
-                    dest: 'static/font-awesome',
+                    dest: 'static/libs/font-awesome',
                     filter: 'isFile'
                 }, {
                     src: 'bower_components/jquery/dist/jquery.min.js',
-                    dest: 'static/jquery.min.js'
+                    dest: 'static/libs/jquery.min.js'
                 }, {
                     expand: true,
                     cwd: 'bower_components/bootstrap/dist',
-                    src: ['css/*', 'fonts/*', 'js/*'],
-                    dest: 'static/bootstrap',
+                    src: ['css/*', 'js/*'],
+                    dest: 'static/libs/bootstrap',
+                    filter: 'isFile'
+                }, {
+                    expand: true,
+                    cwd: 'bower_components/tether/dist',
+                    src: ['css/*', 'js/*'],
+                    dest: 'static/libs/tether',
+                    filter: 'isFile'
+                }]
+            },
+            src: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/image',
+                    src: ['*'],
+                    dest: 'static/image',
                     filter: 'isFile'
                 }]
             }

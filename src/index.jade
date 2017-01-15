@@ -1,3 +1,27 @@
-html
-    body
-        div abc
+include _layout
+div#indexCarousel.carousel.slide(data-ride='carousel')
+    div.carousel-inner(role="listbox")
+        div.carousel-item.active
+            img.d-block.img-fluid(src='image/index1.png' alt='slide 1' style='width:100%;')
+            div.carousel-caption.d-none.d-md-block
+                h3 四月前报名追梦暑期夏令营享500元优惠
+        div.carousel-item
+            img.d-block.img-fluid(src='image/index2.png' alt='slide 2' style='width:100%;')
+            div.carousel-caption.d-none.d-md-block
+                h3 两人同行，好事成双；推荐越多，优惠越大！
+    a.carousel-control-prev(href='#indexCarousel' role="button" data-slide="prev")
+        span.carousel-control-prev-icon
+    a.carousel-control-next(href='#indexCarousel' role="button" data-slide="next")
+        span.carousel-control-next-icon
+script.
+    $('.carousel').carousel({ interval: 5000 });
+h2 这一段不知道怎么放
+h3 The world is a book and those who do not travel read only one page.
+h3 「世界是一本书, 而那些从未旅行的人们仅仅读了这本书的一页。」
+p.
+    兩人同行，好事成雙; 推薦越多，優惠越大!
+    想要跟朋友一起出国游学? 赶紧加入我们吧！
+    邀请一个朋友一起游学，你俩同享額外美金50元折扣。
+    邀请两个朋友一起游学，你享有美金100元折扣而两位朋友各享美金50元折扣。
+    越多人同行，优惠越大喔! 赶快把你的朋友一起 “揪”进來!
+

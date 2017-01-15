@@ -5,9 +5,16 @@ import * as path from 'path';
 import * as fs from 'fs';
 import * as mkdirp from 'mkdirp';
 
-bb.resolve()
-    .then(() => writeFile('./static/index.html', jade.compileFile('./src/index.jade', { pretty: true })({})))
-    .then(() => console.log(`index.jade compiled`))
+const jadeList = [
+    'index',
+    'about',
+    'contactus',
+    'video',
+    'program'
+]
+
+bb.all(jadeList.map(name=>writeFile(`./static/${name}.html`, jade.compileFile(`./src/${name}.jade`, { pretty: true })({}))))
+    .then(() => console.log(`jade files compiled`))
     .catch(err => { console.error(err.stack); })
     .then(() => {
         process.exit(0);
