@@ -2,5 +2,6 @@ node_modules
 bower_components
 *.js
 *.html
+!/static/*.html
 typings
 !Gruntfile.js
